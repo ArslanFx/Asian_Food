@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Food & Pakwan | Bahria Town Karachi</title>
+    
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png?v=2">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">Asian Food & <span>Pakwan</span></div>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#catering">Catering & Deeg</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-buttons">
+                <a href="tel:+923000423115" class="btn-call"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Taste & Tradition Redefined</span>
+            <h1 class="hero-title">Experience Premium Culinary Luxury in Bahria Town</h1>
+            <p class="hero-desc">Indulge in authentic local delicacies crafted by masters or secure professional large-scale catering deegs for your grand celebrations.</p>
+            <div class="hero-actions">
+                <a href="#menu" class="btn-primary">Explore Luxury Menu</a>
+                <a href="https://wa.me/923000423115" target="_blank" class="btn-secondary"><i class="fa-brands fa-whatsapp"></i> Order via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Premium Quality</h3>
+                <p>Cooked with 100% organic ingredients and pure oils by traditional master chefs.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Express Delivery</h3>
+                <p>Hot, fresh, and securely packed meals delivered directly to your doorstep in Bahria Town.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                <h3>Elite Catering</h3>
+                <p>Professional bulk cooking in traditional commercial deegs for every special occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+    <div class="section-header">
+        <h2>Our Restaurant Specialties</h2>
+        <p>Freshly cooked everyday premium traditional flavors</p>
+    </div>
+    
+    <div class="menu-grid">
+        <div class="menu-card">
+            <div class="menu-img-holder">
+                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=500&q=80" alt="VIP Beef Biryani">
+            </div>
+            <div class="menu-info">
+                <h4>VIP Beef Biryani</h4>
+                <p>Karachi's legendary aromatic basmati rice layered with exceptionally tender beef and hand-ground native spices.</p>
+                <div class="menu-footer">
+                    <span class="price">Rs. 450</span>
+                    <button class="order-btn" onclick="sendOrder('VIP Beef Biryani', 'Rs. 450')">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-img-holder">
+                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=500&q=80" alt="Chicken Koyla Karahi">
+            </div>
+            <div class="menu-info">
+                <h4>Chicken Koyla Karahi</h4>
+                <p>Smoked over live charcoal embers, infused with rich butter, organic green chilies, and fresh ginger slivers.</p>
+                <div class="menu-footer">
+                    <span class="price">Rs. 1,400 <small>(Full)</small></span>
+                    <button class="order-btn" onclick="sendOrder('Chicken Koyla Karahi', 'Rs. 1,400')">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-img-holder">
+                <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=500&q=80" alt="Mutton Kunna">
+            </div>
+            <div class="menu-info">
+                <h4>Premium Mutton Kunna</h4>
+                <p>Traditional Chinioti style mutton cooked slowly in a clay pot, creating a rich, thick, and deeply flavorful gravy.</p>
+                <div class="menu-footer">
+                    <span class="price">Rs. 1,800</span>
+                    <button class="order-btn" onclick="sendOrder('Premium Mutton Kunna', 'Rs. 1,800')">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+    <div class="menu-img-holder">
+        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=500&q=80" alt="Chicken Reshmi Kabab">
+    </div>
+    <div class="menu-info">
+        <h4>Chicken Reshmi Kabab</h4>
+                <p>Velvety texture kababs made with minced chicken, fresh cream, cheese, and mild spices grilled to melting perfection.</p>
+                <div class="menu-footer">
+                    <span class="price">Rs. 650 <small>(Plate)</small></span>
+                    <button class="order-btn" onclick="sendOrder('Chicken Reshmi Kabab', 'Rs. 650')">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-img-holder">
+                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80" alt="Shahi Zafrani Kheer">
+            </div>
+            <div class="menu-info">
+                <h4>Shahi Zafrani Kheer</h4>
+                <p>Slow-cooked milk dessert infused with real Iranian saffron, premium basmati rice, and loaded with crushed almonds & pistachios.</p>
+                <div class="menu-footer">
+                    <span class="price">Rs. 250</span>
+                    <button class="order-btn" onclick="sendOrder('Shahi Zafrani Kheer', 'Rs. 250')">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-img-holder">
+                <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=500&q=80" alt="VIP Mutton Pulao">
+            </div>
+            <div class="menu-info">
+                <h4>VIP Bannu Mutton Pulao</h4>
+                <p>Authentic brown rice cooked in rich mutton yakhni, served with chunks of juicy meat and traditional spices.</p>
+                <div class="menu-footer">
+                    <span class="price">Rs. 750</span>
+                    <button class="order-btn" onclick="sendOrder('VIP Bannu Mutton Pulao', 'Rs. 750')">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+    <section id="catering" class="catering-section">
+        <div class="catering-container">
+            <div class="catering-text">
+                <h2>Elite Catering & <br><span>Traditional Deegs</span></h2>
+                <p>Hosting an event or Niaz in Bahria Town? Our veteran pakwan chefs prepare premium commercial deegs maintaining strict hygiene protocols and correct traditional weight ratios.</p>
+                <ul class="catering-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Wedding & Valima Culinary Execution</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Niaz, Aqeeqah & Corporate Gatherings</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Customized Menu Selections</li>
+                </ul>
+                <a href="https://wa.me/923000423115?text=Hi, I want to inquire about premium Deeg rates." target="_blank" class="btn-catering"><i class="fa-brands fa-whatsapp"></i> Get Live Deeg Quotation</a>
+            </div>
+            <div class="catering-image">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Premium Catering Setup">
+            </div>
+        </div>
+    </section>
+    <section id="booking" class="booking-section">
+    <div class="booking-wrapper">
+        <div class="booking-title-holder">
+            <h2>Book A Premium Table</h2>
+            <p>Reserve your luxury dine-in slot instantly</p>
+        </div>
+        
+        <form id="tableBookingForm" onsubmit="bookTable(event)">
+            
+            <div class="form-group">
+                <label for="bookName">Your Name</label>
+                <input type="text" id="bookName" class="form-input" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="bookGuests">Number of Guests</label>
+                <select id="bookGuests" class="form-input" required>
+                    <option value="2">2 Persons</option>
+                    <option value="4">4 Persons</option>
+                    <option value="6">6 Persons</option>
+                    <option value="8">8+ Persons</option>
+                </select>
+            </div>
+            
+            <div class="form-row-split">
+                <div class="form-group">
+                    <label for="bookDate">Select Date</label>
+                    <input type="date" id="bookDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="bookTime">Select Time</label>
+                    <input type="time" id="bookTime" class="form-input" required>
+                </div>
+            </div>
+            
+            <button type="submit" id="submitBookBtn" class="btn-book-submit">
+                Confirm Reservation via WhatsApp
+            </button>
+        </form>
+    </div>
+</section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Asian Food & Pakwan</h3>
+                <p>Your premium culinary hospitality partner based in Midway Commercial, Bahria Town Karachi. Redefining authentic local food standards.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu Specials</a></li>
+                    <li><a href="#catering">Catering Deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Location & Operations</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Shop 2, Baig Tower, 92 Midway Commercial A, Line E, Precinct 5, Bahria Town Karachi.</p>
+                
+                <p>
+                    <i class="fa-solid fa-phone"></i> 
+                    <a href="tel:+923000423115" style="color: var(--text-muted-white); text-decoration: none; font-weight: 500; transition: color 0.3s;">
+                        +92 300 0423115
+                    </a>
+                </p>
+                
+                <p><i class="fa-solid fa-clock"></i> 09:00 AM - 01:00 AM Daily</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Asian Food & Pakwan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
