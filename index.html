@@ -1,254 +1,997 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="google-site-verification" content="34mFmOe_4u-nytRypZqce3tQrfkm-N_2VaCj6YWKrOs" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asian Food & Pakwan | Bahria Town Karachi</title>
-    
-<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png?v=2">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="navbar">
-        <div class="nav-container">
-            <div class="logo">Asian Food & <span>Pakwan</span></div>
-            <nav class="nav-links" id="navLinks">
-                <a href="#home" class="active">Home</a>
-                <a href="#menu">Our Menu</a>
-                <a href="#catering">Catering & Deeg</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="nav-buttons">
-                <a href="tel:+923000423115" class="btn-call"><i class="fa-solid fa-phone"></i> Call Now</a>
-                <div class="menu-toggle" id="menuToggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="hero-subtitle">Taste & Tradition Redefined</span>
-            <h1 class="hero-title">Experience Premium Culinary Luxury in Bahria Town</h1>
-            <p class="hero-desc">Indulge in authentic local delicacies crafted by masters or secure professional large-scale catering deegs for your grand celebrations.</p>
-            <div class="hero-actions">
-                <a href="#menu" class="btn-primary">Explore Luxury Menu</a>
-                <a href="https://wa.me/923000423115" target="_blank" class="btn-secondary"><i class="fa-brands fa-whatsapp"></i> Order via WhatsApp</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="features-section">
-        <div class="features-container">
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
-                <h3>Premium Quality</h3>
-                <p>Cooked with 100% organic ingredients and pure oils by traditional master chefs.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                <h3>Express Delivery</h3>
-                <p>Hot, fresh, and securely packed meals delivered directly to your doorstep in Bahria Town.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
-                <h3>Elite Catering</h3>
-                <p>Professional bulk cooking in traditional commercial deegs for every special occasion.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="menu" class="menu-section">
-    <div class="section-header">
-        <h2>Our Restaurant Specialties</h2>
-        <p>Freshly cooked everyday premium traditional flavors</p>
-    </div>
-    
-    <div class="menu-grid">
-        <div class="menu-card">
-            <div class="menu-img-holder">
-                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=500&q=80" alt="VIP Beef Biryani">
-            </div>
-            <div class="menu-info">
-                <h4>VIP Beef Biryani</h4>
-                <p>Karachi's legendary aromatic basmati rice layered with exceptionally tender beef and hand-ground native spices.</p>
-                <div class="menu-footer">
-                    <span class="price">Rs. 450</span>
-                    <button class="order-btn" onclick="sendOrder('VIP Beef Biryani', 'Rs. 450')">Order Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="menu-img-holder">
-                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=500&q=80" alt="Chicken Koyla Karahi">
-            </div>
-            <div class="menu-info">
-                <h4>Chicken Koyla Karahi</h4>
-                <p>Smoked over live charcoal embers, infused with rich butter, organic green chilies, and fresh ginger slivers.</p>
-                <div class="menu-footer">
-                    <span class="price">Rs. 1,400 <small>(Full)</small></span>
-                    <button class="order-btn" onclick="sendOrder('Chicken Koyla Karahi', 'Rs. 1,400')">Order Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="menu-img-holder">
-                <img src="https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=500&q=80" alt="Mutton Kunna">
-            </div>
-            <div class="menu-info">
-                <h4>Premium Mutton Kunna</h4>
-                <p>Traditional Chinioti style mutton cooked slowly in a clay pot, creating a rich, thick, and deeply flavorful gravy.</p>
-                <div class="menu-footer">
-                    <span class="price">Rs. 1,800</span>
-                    <button class="order-btn" onclick="sendOrder('Premium Mutton Kunna', 'Rs. 1,800')">Order Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-card">
-    <div class="menu-img-holder">
-        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=500&q=80" alt="Chicken Reshmi Kabab">
-    </div>
-    <div class="menu-info">
-        <h4>Chicken Reshmi Kabab</h4>
-                <p>Velvety texture kababs made with minced chicken, fresh cream, cheese, and mild spices grilled to melting perfection.</p>
-                <div class="menu-footer">
-                    <span class="price">Rs. 650 <small>(Plate)</small></span>
-                    <button class="order-btn" onclick="sendOrder('Chicken Reshmi Kabab', 'Rs. 650')">Order Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="menu-img-holder">
-                <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=500&q=80" alt="Shahi Zafrani Kheer">
-            </div>
-            <div class="menu-info">
-                <h4>Shahi Zafrani Kheer</h4>
-                <p>Slow-cooked milk dessert infused with real Iranian saffron, premium basmati rice, and loaded with crushed almonds & pistachios.</p>
-                <div class="menu-footer">
-                    <span class="price">Rs. 250</span>
-                    <button class="order-btn" onclick="sendOrder('Shahi Zafrani Kheer', 'Rs. 250')">Order Now</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-card">
-            <div class="menu-img-holder">
-                <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=500&q=80" alt="VIP Mutton Pulao">
-            </div>
-            <div class="menu-info">
-                <h4>VIP Bannu Mutton Pulao</h4>
-                <p>Authentic brown rice cooked in rich mutton yakhni, served with chunks of juicy meat and traditional spices.</p>
-                <div class="menu-footer">
-                    <span class="price">Rs. 750</span>
-                    <button class="order-btn" onclick="sendOrder('VIP Bannu Mutton Pulao', 'Rs. 750')">Order Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>  
-    <section id="catering" class="catering-section">
-        <div class="catering-container">
-            <div class="catering-text">
-                <h2>Elite Catering & <br><span>Traditional Deegs</span></h2>
-                <p>Hosting an event or Niaz in Bahria Town? Our veteran pakwan chefs prepare premium commercial deegs maintaining strict hygiene protocols and correct traditional weight ratios.</p>
-                <ul class="catering-list">
-                    <li><i class="fa-solid fa-circle-check"></i> Wedding & Valima Culinary Execution</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Niaz, Aqeeqah & Corporate Gatherings</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Customized Menu Selections</li>
-                </ul>
-                <a href="https://wa.me/923000423115?text=Hi, I want to inquire about premium Deeg rates." target="_blank" class="btn-catering"><i class="fa-brands fa-whatsapp"></i> Get Live Deeg Quotation</a>
-            </div>
-            <div class="catering-image">
-                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" alt="Premium Catering Setup">
-            </div>
-        </div>
-    </section>
-    <section id="booking" class="booking-section">
-    <div class="booking-wrapper">
-        <div class="booking-title-holder">
-            <h2>Book A Premium Table</h2>
-            <p>Reserve your luxury dine-in slot instantly</p>
-        </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="google-site-verification" content="34mFmOe_4u-nytRypZqce3tQrfkm-N_2VaCj6YWKrOs" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hira's Academy | Trade with Hira</title>
         
-        <form id="tableBookingForm" onsubmit="bookTable(event)">
-            
-            <div class="form-group">
-                <label for="bookName">Your Name</label>
-                <input type="text" id="bookName" class="form-input" placeholder="Enter your full name" required>
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB4PSIxMCIgeT0iMzAiIHdpZHRoPSIxNSIgaGVpZ2h0PSI1MCIgZmlsbD0iIzAwZmY4OCIvPjxsaW5lIHgxPSIxNyIgeTE9IjIwIiB4Mj0iMTciIHkyPSI4MCIgc3Ryb2tlPSIjMDBmZjg4IiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCB4PSI0MCIgeT0iMjAiIHdpZHRoPSIxNSIgaGVpZ2h0PSI2MCIgZmlsbD0iI2ZmM2IzYiIvPjxsaW5lIHgxPSI0NyIgeTE9IjEwIiB4Mj0iNDciIHkyPSI4MCIgc3Ryb2tlPSIjZmYzYjNiIiBzdHJva2Utd2lkdGg9IjIiLz48cmVjdCB4PSI3MCIgeT0iNDAiIHdpZHRoPSIxNSIgaGVpZ2h0PSI0MCIgZmlsbD0iIzAwZmY4OCIvPjxsaW5lIHgxPSI3NyIgeTE9IjMwIiB4Mj0iNzciIHkyPSI4MCIgc3Ryb2tlPSIjMDBmZjg4IiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <style>
+            :root {
+                --primary-color: #00ff88;
+                --primary-rgb: 0, 255, 136;
+                --secondary-color: #ff3b3b;
+                --secondary-rgb: 255, 59, 59;
+                --accent-color: #f7931a;
+                --accent-rgb: 247, 147, 26;
+                --bg-dark: #050505;
+                --bg-card: #0f0f0f;
+                --bg-card-rgb: 15, 15, 15;
+                --text-main: #ffffff;
+                --text-muted: #a0a0a0;
+                --transition-speed: 0.4s;
+                --cursor-size: 40px;
+                --cursor-inner-size: 8px;
+                --nav-height: 70px;
+                --section-padding: 120px;
+                --section-padding-mobile: 80px;
+                --border-radius-sm: 6px;
+                --border-radius-md: 15px;
+                --border-radius-lg: 20px;
+                --border-radius-xl: 24px;
+            }
+
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            html { scroll-behavior: smooth; }
+
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: var(--bg-dark);
+                color: var(--text-main);
+                overflow-x: hidden;
+            }
+
+            /* ═══════════ REDUCED MOTION ═══════════ */
+            @media (prefers-reduced-motion: reduce) {
+                *, *::before, *::after {
+                    animation-duration: 0.01ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.01ms !important;
+                }
+                html { scroll-behavior: auto; }
+            }
+
+            /* ═══════════ CUSTOM CURSOR ═══════════ */
+            .cursor {
+                width: var(--cursor-size);
+                height: var(--cursor-size);
+                border: 2px solid var(--primary-color);
+                border-radius: 50%;
+                position: fixed;
+                top: 0; left: 0;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+                transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background 0.25s ease, opacity 0.3s ease;
+                z-index: 99999;
+                mix-blend-mode: difference;
+            }
+            .cursor-inner {
+                width: var(--cursor-inner-size);
+                height: var(--cursor-inner-size);
+                background-color: var(--primary-color);
+                border-radius: 50%;
+                position: fixed;
+                top: 0; left: 0;
+                transform: translate(-50%, -50%);
+                pointer-events: none;
+                z-index: 99999;
+                transition: width 0.15s ease, height 0.15s ease, background-color 0.25s ease, opacity 0.3s ease;
+            }
+            .cursor.hover {
+                width: 60px; height: 60px;
+                border: 2px solid var(--accent-color);
+                background: rgba(var(--accent-rgb), 0.1);
+            }
+            .cursor-inner.hover {
+                width: 12px; height: 12px;
+                background-color: var(--accent-color);
+            }
+            .cursor.click {
+                width: 30px; height: 30px;
+                border-color: var(--secondary-color);
+                background: rgba(var(--secondary-rgb), 0.15);
+            }
+            .cursor-inner.click {
+                width: 6px; height: 6px;
+                background-color: var(--secondary-color);
+            }
+
+            /* Hide custom cursor on touch devices */
+            @media (hover: none) and (pointer: coarse) {
+                .cursor, .cursor-inner { display: none !important; }
+            }
+
+            #particle-bg {
+                position: fixed; top: 0; left: 0;
+                width: 100%; height: 100%;
+                z-index: 0; pointer-events: none;
+            }
+
+            /* ═══════════ NAVBAR ═══════════ */
+            nav {
+                position: fixed; top: 0; left: 0; width: 100%;
+                padding: 15px 50px;
+                display: flex; justify-content: space-between; align-items: center;
+                z-index: 1000;
+                background: rgba(5,5,5,0.85);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                border-bottom: 1px solid rgba(var(--primary-rgb), 0.08);
+                transition: padding 0.3s ease, background 0.3s ease;
+            }
+            nav.scrolled {
+                padding: 10px 50px;
+                background: rgba(5,5,5,0.95);
+                border-bottom-color: rgba(var(--primary-rgb), 0.15);
+            }
+            .logo-main {
+                font-family: 'Orbitron', sans-serif;
+                font-size: 24px; font-weight: 900;
+                background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                background-clip: text;
+                letter-spacing: 2px;
+            }
+            .logo-sub {
+                font-size: 11px; color: var(--text-muted);
+                letter-spacing: 4px; text-transform: uppercase; margin-top: 2px;
+            }
+            .nav-links { display: flex; gap: 25px; align-items: center; }
+            .nav-links a {
+                text-decoration: none; color: var(--text-muted);
+                font-weight: 500; font-size: 14px;
+                position: relative; transition: color 0.3s; cursor: pointer;
+                padding: 4px 0;
+            }
+            .nav-links a::after {
+                content: ''; position: absolute; bottom: -5px; left: 0;
+                width: 0; height: 2px;
+                background: var(--primary-color); transition: width 0.3s;
+            }
+            .nav-links a:hover { color: var(--text-main); }
+            .nav-links a:hover::after { width: 100%; }
+            .nav-links a:focus-visible {
+                outline: 2px solid var(--primary-color);
+                outline-offset: 4px;
+                border-radius: 2px;
+            }
+            .nav-active { color: var(--primary-color) !important; }
+            .nav-active::after { width: 100% !important; }
+
+            /* Mobile menu toggle */
+            .nav-toggle {
+                display: none;
+                background: none; border: none; cursor: pointer;
+                width: 30px; height: 20px;
+                position: relative; z-index: 1001;
+            }
+            .nav-toggle span {
+                display: block; width: 100%; height: 2px;
+                background: var(--text-main); border-radius: 2px;
+                position: absolute; left: 0;
+                transition: all 0.3s ease;
+            }
+            .nav-toggle span:nth-child(1) { top: 0; }
+            .nav-toggle span:nth-child(2) { top: 9px; }
+            .nav-toggle span:nth-child(3) { top: 18px; }
+            .nav-toggle.active span:nth-child(1) { top: 9px; transform: rotate(45deg); }
+            .nav-toggle.active span:nth-child(2) { opacity: 0; }
+            .nav-toggle.active span:nth-child(3) { top: 9px; transform: rotate(-45deg); }
+
+            /* ═══════════ WHATSAPP STICKY ═══════════ */
+            .whatsapp-sticky {
+                position: fixed; bottom: 30px; right: 30px; z-index: 9999;
+                background-color: #25D366; color: white;
+                width: 60px; height: 60px; border-radius: 50%;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 30px;
+                box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+                transition: all 0.3s ease;
+                animation: whatsapp-pulse 2s infinite;
+                text-decoration: none;
+            }
+            .whatsapp-sticky:hover {
+                transform: scale(1.2) rotate(10deg);
+                box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+            }
+            .whatsapp-sticky:focus-visible {
+                outline: 3px solid white;
+                outline-offset: 3px;
+            }
+            @keyframes whatsapp-pulse {
+                0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+                70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+                100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+            }
+
+            /* ═══════════ SECTIONS ═══════════ */
+            section {
+                min-height: 100vh;
+                padding: var(--section-padding) 80px;
+                position: relative;
+            }
+            .section-title {
+                font-family: 'Orbitron', sans-serif;
+                font-size: 48px; text-align: center;
+                margin-bottom: 60px; position: relative;
+            }
+            .section-title span { color: var(--primary-color); }
+            .section-title::after {
+                content: ''; display: block;
+                width: 100px; height: 4px;
+                background: var(--accent-color);
+                margin: 20px auto 0; border-radius: 2px;
+            }
+
+            /* ═══════════ REVEAL ANIMATIONS ═══════════ */
+            .reveal {
+                opacity: 0;
+                transform: translateY(40px);
+                transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                            transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal.active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .reveal-left {
+                opacity: 0;
+                transform: translateX(-60px);
+                transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                            transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-left.active {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            .reveal-right {
+                opacity: 0;
+                transform: translateX(60px);
+                transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                            transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal-right.active {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            /* ═══════════ HERO ═══════════ */
+            #home {
+                display: flex; align-items: center; justify-content: center;
+                text-align: center; padding-top: 200px;
+            }
+            .hero-content h1 {
+                font-family: 'Orbitron', sans-serif;
+                font-size: 70px; line-height: 1.1; margin-bottom: 20px;
+            }
+            .hero-content h1 .highlight {
+                background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--primary-color));
+                background-size: 200% auto;
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                background-clip: text;
+                animation: gradient-shift 3s ease-in-out infinite;
+            }
+            @keyframes gradient-shift {
+                0% { background-position: 0% center; }
+                50% { background-position: 100% center; }
+                100% { background-position: 0% center; }
+            }
+            .hero-content p {
+                font-size: 20px; color: var(--text-muted);
+                max-width: 700px; margin: 0 auto 40px; line-height: 1.7;
+            }
+            .hero-content p strong { color: var(--accent-color); font-weight: 600; }
+            .hero-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+            /* ═══════════ BUTTONS ═══════════ */
+            .btn {
+                padding: 15px 40px; border: none; border-radius: 50px;
+                font-size: 18px; font-weight: 600; font-family: 'Poppins', sans-serif;
+                cursor: pointer; position: relative; overflow: hidden;
+                transition: all 0.4s ease; text-decoration: none; display: inline-flex;
+                align-items: center; gap: 10px;
+            }
+            .btn:focus-visible {
+                outline: 3px solid var(--primary-color);
+                outline-offset: 3px;
+            }
+            .btn-primary {
+                background: linear-gradient(90deg, var(--primary-color), #00cc6a);
+                color: #000;
+                box-shadow: 0 0 20px rgba(var(--primary-rgb), 0.3);
+            }
+            .btn-primary:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.5);
+            }
+            .btn-secondary {
+                background: transparent; color: var(--text-main);
+                border: 2px solid var(--text-main);
+            }
+            .btn-secondary:hover {
+                background: var(--text-main); color: #000;
+                transform: translateY(-5px);
+            }
+
+            /* ═══════════ ABOUT ═══════════ */
+            #about { background: linear-gradient(180deg, var(--bg-dark) 0%, #0a0a0a 100%); }
+            .about-grid {
+                display: grid; grid-template-columns: 1fr 1fr;
+                gap: 60px; align-items: center;
+            }
+            .about-text p {
+                font-size: 18px; line-height: 1.8;
+                color: var(--text-muted); margin-bottom: 30px;
+            }
+            .about-text p strong { color: var(--accent-color); font-weight: 600; }
+
+            .about-img {
+                width: 100%; height: 450px;
+                position: relative; overflow: hidden;
+                border-radius: var(--border-radius-lg);
+                border: 1px solid rgba(var(--primary-rgb), 0.2);
+                transition: transform 0.5s ease;
+                background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05), rgba(var(--accent-rgb), 0.05));
+            }
+            .about-img img {
+                width: 100%; height: 100%;
+                object-fit: cover; display: block;
+                transition: transform 0.5s ease;
+            }
+            .about-img:hover { transform: scale(1.02); }
+            .about-img:hover img { transform: scale(1.05); }
+
+            /* ═══════════ SERVICES ═══════════ */
+            .services-container {
+                display: grid; grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+            .service-card {
+                background: rgba(var(--bg-card-rgb), 0.8);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 40px;
+                border-radius: var(--border-radius-lg);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                transition: all 0.4s ease;
+                position: relative; overflow: hidden;
+            }
+            .service-card::before {
+                content: ''; position: absolute; top: 0; left: 0;
+                width: 100%; height: 4px;
+                background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+                transform: scaleX(0); transform-origin: left;
+                transition: transform 0.4s ease;
+            }
+            .service-card::after {
+                content: ''; position: absolute; top: 0; left: 0;
+                width: 100%; height: 100%;
+                background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(var(--primary-rgb), 0.06), transparent 60%);
+                opacity: 0; transition: opacity 0.4s ease;
+            }
+            .service-card:hover::before { transform: scaleX(1); }
+            .service-card:hover::after { opacity: 1; }
+            .service-card:hover {
+                transform: translateY(-10px);
+                border-color: rgba(var(--primary-rgb), 0.3);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(var(--primary-rgb), 0.08);
+            }
+            .service-card i {
+                font-size: 50px; color: var(--primary-color);
+                margin-bottom: 20px; transition: transform 0.4s ease;
+                position: relative; z-index: 1;
+            }
+            .service-card:hover i { transform: rotateY(180deg); }
+            .service-card h3 {
+                font-size: 24px; margin-bottom: 15px;
+                position: relative; z-index: 1;
+            }
+            .service-card p {
+                color: var(--text-muted); line-height: 1.6;
+                position: relative; z-index: 1;
+            }
+
+            /* ═══════════ COURSES / SIGNALS ═══════════ */
+            #courses { background: #080808; }
+            .table-wrapper {
+                overflow-x: auto;
+                border-radius: var(--border-radius-md);
+                box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            }
+            .course-table {
+                width: 100%; border-collapse: collapse;
+                background: var(--bg-card);
+                min-width: 600px;
+            }
+            .course-table th, .course-table td {
+                padding: 20px; text-align: left;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+            }
+            .course-table th {
+                background: rgba(var(--primary-rgb), 0.08);
+                color: var(--primary-color);
+                font-family: 'Orbitron', sans-serif;
+                font-size: 13px; letter-spacing: 1px;
+                white-space: nowrap;
+            }
+            .course-table td { font-size: 15px; color: var(--text-muted); }
+            .course-table tbody tr {
+                transition: background 0.3s ease;
+            }
+            .course-table tbody tr:hover td {
+                background: rgba(var(--accent-rgb), 0.05);
+                color: var(--text-main);
+            }
+            .status-active {
+                color: var(--primary-color); font-weight: bold;
+                text-shadow: 0 0 10px rgba(var(--primary-rgb), 0.3);
+            }
+            .status-badge {
+                display: inline-block; padding: 4px 12px;
+                border-radius: 20px; font-size: 12px; font-weight: 700;
+                letter-spacing: 1px;
+                background: rgba(var(--primary-rgb), 0.15);
+                color: var(--primary-color);
+                border: 1px solid rgba(var(--primary-rgb), 0.3);
+            }
+
+            /* ═══════════ TESTIMONIALS ═══════════ */
+            .testimonials-grid {
+                display: grid; grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            .testimonial-card {
+                background: linear-gradient(145deg, #141414, #0a0a0a);
+                padding: 30px; border-radius: var(--border-radius-md);
+                border-left: 4px solid var(--accent-color);
+                transition: all 0.3s ease;
+            }
+            .testimonial-card:hover {
+                transform: translateY(-5px);
+                border-left-color: var(--primary-color);
+                box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            }
+            .testimonial-card p {
+                font-style: italic; color: var(--text-muted);
+                margin-bottom: 20px; line-height: 1.7; font-size: 15px;
+            }
+            .testimonial-author { display: flex; align-items: center; gap: 15px; }
+            .author-avatar {
+                width: 50px; height: 50px; border-radius: 50%;
+                background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+                display: flex; align-items: center; justify-content: center;
+                color: #000; font-weight: bold; font-size: 18px;
+                flex-shrink: 0;
+            }
+            .author-info strong { display: block; font-size: 15px; }
+            .author-info span {
+                color: var(--primary-color); font-size: 12px;
+                font-weight: 500; letter-spacing: 0.5px;
+            }
+
+            /* ═══════════ FOOTER ═══════════ */
+            footer {
+                padding: 60px 80px; background: #000;
+                border-top: 1px solid rgba(255,255,255,0.05);
+                text-align: center;
+            }
+            .footer-logo {
+                font-family: 'Orbitron', sans-serif;
+                font-size: 32px; font-weight: 900;
+                background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 10px;
+            }
+            .footer-sub {
+                color: var(--text-muted);
+                letter-spacing: 3px; font-size: 14px;
+                text-transform: uppercase;
+            }
+            .footer-links {
+                margin: 30px 0; display: flex;
+                justify-content: center; gap: 30px;
+            }
+            .footer-links a {
+                color: var(--text-muted); font-size: 28px;
+                transition: color 0.3s, transform 0.3s;
+                text-decoration: none; position: relative;
+                display: inline-block;
+            }
+            .footer-links a:hover {
+                color: var(--primary-color); transform: translateY(-5px);
+            }
+            .footer-links a:focus-visible {
+                outline: 2px solid var(--primary-color);
+                outline-offset: 4px;
+                border-radius: 4px;
+            }
+            .wa-tooltip {
+                visibility: hidden; width: 180px;
+                background-color: var(--primary-color); color: #000;
+                text-align: center; border-radius: var(--border-radius-sm);
+                padding: 8px 0; font-size: 13px; font-weight: 600;
+                position: absolute; bottom: 125%; left: 50%;
+                transform: translateX(-50%); z-index: 1;
+                opacity: 0; transition: opacity 0.3s;
+                pointer-events: none;
+            }
+            .wa-tooltip::after {
+                content: ""; position: absolute; top: 100%; left: 50%;
+                margin-left: -5px; border-width: 5px;
+                border-style: solid;
+                border-color: var(--primary-color) transparent transparent transparent;
+            }
+            .footer-wa-link:hover .wa-tooltip { visibility: visible; opacity: 1; }
+            .footer-disclaimer {
+                color: var(--text-muted); font-size: 13px;
+                margin-top: 20px; opacity: 0.7;
+            }
+
+            /* ═══════════ MOBILE ═══════════ */
+            @media (max-width: 1024px) {
+                .services-container { grid-template-columns: repeat(2, 1fr); }
+                section { padding: var(--section-padding) 40px; }
+            }
+
+            @media (max-width: 768px) {
+                nav { padding: 12px 20px; }
+                .nav-toggle { display: block; }
+                .nav-links {
+                    position: fixed; top: 0; right: -100%;
+                    width: 280px; height: 100vh;
+                    background: rgba(5,5,5,0.98);
+                    backdrop-filter: blur(20px);
+                    -webkit-backdrop-filter: blur(20px);
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 40px;
+                    gap: 25px;
+                    transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                    border-left: 1px solid rgba(var(--primary-rgb), 0.1);
+                }
+                .nav-links.open { right: 0; }
+                .nav-links a { font-size: 18px; }
+
+                section { padding: var(--section-padding-mobile) 20px; }
+                #home { padding-top: 150px; }
+                .hero-content h1 { font-size: 36px; }
+                .hero-content p { font-size: 16px; }
+                .section-title { font-size: 32px; margin-bottom: 40px; }
+
+                .services-container { grid-template-columns: 1fr; }
+                .about-grid { grid-template-columns: 1fr; gap: 40px; }
+                .about-img { height: 350px; }
+                .testimonials-grid { grid-template-columns: 1fr; }
+
+                .btn { padding: 12px 30px; font-size: 16px; }
+                .hero-buttons { flex-direction: column; align-items: center; }
+
+                footer { padding: 40px 20px; }
+
+                /* Overlay when mobile menu is open */
+                .nav-overlay {
+                    position: fixed; top: 0; left: 0;
+                    width: 100%; height: 100%;
+                    background: rgba(0,0,0,0.6);
+                    z-index: 999;
+                    opacity: 0; pointer-events: none;
+                    transition: opacity 0.3s ease;
+                }
+                .nav-overlay.active { opacity: 1; pointer-events: auto; }
+            }
+
+            @media (max-width: 480px) {
+                .hero-content h1 { font-size: 28px; }
+                .section-title { font-size: 26px; }
+                .service-card { padding: 30px; }
+                .service-card i { font-size: 40px; }
+                .service-card h3 { font-size: 20px; }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Custom cursor elements -->
+        <div class="cursor" aria-hidden="true"></div>
+        <div class="cursor-inner" aria-hidden="true"></div>
+
+        <!-- Mobile nav overlay -->
+        <div class="nav-overlay" aria-hidden="true"></div>
+
+        <canvas id="particle-bg" aria-hidden="true"></canvas>
+
+        <a href="https://wa.me/923190165137" target="_blank" rel="noopener noreferrer" class="whatsapp-sticky" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+
+        <!-- NAVBAR -->
+        <nav role="navigation" aria-label="Main navigation">
+            <div>
+                <div class="logo-main">Hira's Academy</div>
+                <div class="logo-sub">Trade with Hira</div>
             </div>
-            
-            <div class="form-group">
-                <label for="bookGuests">Number of Guests</label>
-                <select id="bookGuests" class="form-input" required>
-                    <option value="2">2 Persons</option>
-                    <option value="4">4 Persons</option>
-                    <option value="6">6 Persons</option>
-                    <option value="8">8+ Persons</option>
-                </select>
-            </div>
-            
-            <div class="form-row-split">
-                <div class="form-group">
-                    <label for="bookDate">Select Date</label>
-                    <input type="date" id="bookDate" class="form-input" required>
-                </div>
-                <div class="form-group">
-                    <label for="bookTime">Select Time</label>
-                    <input type="time" id="bookTime" class="form-input" required>
-                </div>
-            </div>
-            
-            <button type="submit" id="submitBookBtn" class="btn-book-submit">
-                Confirm Reservation via WhatsApp
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
             </button>
-        </form>
-    </div>
-</section>
-
-    <footer id="contact" class="footer">
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>Asian Food & Pakwan</h3>
-                <p>Your premium culinary hospitality partner based in Midway Commercial, Bahria Town Karachi. Redefining authentic local food standards.</p>
+            <div class="nav-links">
+                <a href="#home" class="nav-active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#courses">Signals</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="https://chat.whatsapp.com/CTkxAcFTK6iGOhd062JOma" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:8px 20px;font-size:13px;">Join Now</a>
             </div>
+        </nav>
+
+        <!-- HERO -->
+        <section id="home">
+            <div class="hero-content">
+                <h1 class="reveal">Master The Markets <br> With <span class="highlight">Hira's Academy</span></h1>
+                <p class="reveal" style="transition-delay: 0.15s;">Stop guessing, start trading. Get premium <strong>XAUUSD (Gold)</strong> signals, expert mentorship, and daily market analysis to secure your financial future.</p>
+                <div class="hero-buttons reveal" style="transition-delay: 0.3s;">
+                    <a href="https://chat.whatsapp.com/CTkxAcFTK6iGOhd062JOma" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get VIP Access <i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2 class="section-title reveal">Who Is <span>Hira</span>?</h2>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>Welcome to Hira's Academy! With over 5+ years of experience specializing in the <strong>XAUUSD (Gold)</strong> market, I have helped thousands of students transform their trading from gambling into a professional skill.</p>
+                    <p>My strategy focuses on Price Action, Smart Money Concepts (SMC), and strict risk management specifically tailored for Gold volatility. We don't just give signals; we teach you how to fish for a lifetime.</p>
+                    <a href="https://wa.me/923190165137" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 20px;">Message Me Directly</a>
+                </div>
+                <div class="about-img reveal-right">
+                    <img src="./img/WhatsApp Image 2026-09-23 at 10.36.59 AM.jpeg" alt="Hira - Professional Gold Trader and Mentor" loading="lazy" referrerpolicy="no-referrer">
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services">
+            <h2 class="section-title reveal">Our <span>Premium</span> Services</h2>
+            <div class="services-container">
+                <div class="service-card reveal" style="transition-delay: 0s;"><i class="fas fa-signal" aria-hidden="true"></i><h3>VIP Gold Signals</h3><p>Daily high-accuracy XAUUSD (Gold) signals with exact Entry, TP, and SL levels.</p></div>
+                <div class="service-card reveal" style="transition-delay: 0.1s;"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i><h3>1-on-1 Mentorship</h3><p>Personalized coaching sessions to build your own trading strategy, psychology, and risk management.</p></div>
+                <div class="service-card reveal" style="transition-delay: 0.2s;"><i class="fas fa-chart-area" aria-hidden="true"></i><h3>Market Analysis</h3><p>Daily video breakdowns of Gold market structure, institutional order blocks, and liquidity zones.</p></div>
+                <div class="service-card reveal" style="transition-delay: 0.3s;"><i class="fas fa-book-open" aria-hidden="true"></i><h3>Beginner Course</h3><p>A to Z trading course designed specifically for beginners to understand the charts and terminology.</p></div>
+                <div class="service-card reveal" style="transition-delay: 0.4s;"><i class="fas fa-users" aria-hidden="true"></i><h3>VIP Community</h3><p>Join a family of like-minded traders sharing ideas, wins, and support 24/7 on WhatsApp & Telegram.</p></div>
+                <div class="service-card reveal" style="transition-delay: 0.5s;"><i class="fas fa-robot" aria-hidden="true"></i><h3>Auto Copy Trading</h3><p>Don't have time? Copy my trades directly to your MT4/MT5 account automatically and earn passively.</p></div>
+            </div>
+        </section>
+
+        <!-- SIGNALS PERFORMANCE -->
+        <section id="courses">
+            <h2 class="section-title reveal">Recent <span>Signals</span> Performance</h2>
+            <div class="table-wrapper reveal">
+                <table class="course-table">
+                    <thead><tr><th>Asset</th><th>Type</th><th>Entry</th><th>Result</th><th>Pips / ROI</th><th>Status</th></tr></thead>
+                    <tbody>
+                        <tr><td>XAU/USD (Gold)</td><td>Sell</td><td>4349.00</td><td>TP 5 Hit</td><td>+710 Pips</td><td><span class="status-badge">WON</span></td></tr>
+                        <tr><td>XAU/USD (Gold)</td><td>Buy</td><td>4285.00</td><td>TP 4 Hit</td><td>+470 Pips</td><td><span class="status-badge">WON</span></td></tr>
+                        <tr><td>XAU/USD (Gold)</td><td>Buy</td><td>4342.00</td><td>TP 4 Hit</td><td>+480 Pips</td><td><span class="status-badge">WON</span></td></tr>
+                        <tr><td>XAU/USD (Gold)</td><td>Sell</td><td>4378.00</td><td>TP 5 Hit</td><td>+880 Pips</td><td><span class="status-badge">WON</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials">
+            <h2 class="section-title reveal">Student <span>Reviews</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal" style="transition-delay: 0s;">
+                    <p>"Hira's academy changed my life. I was losing consistently, but after learning Gold SMC from Hira, I had my first profitable month!"</p>
+                    <div class="testimonial-author"><div class="author-avatar">A</div><div class="author-info"><strong>Ahmed Khan</strong><span>VIP Member</span></div></div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.1s;">
+                    <p>"The signals are amazing, but the mentorship is the real gem. Finally understand why I am taking a trade. Highly recommended!"</p>
+                    <div class="testimonial-author"><div class="author-avatar">S</div><div class="author-info"><strong>Sara Ali</strong><span>Mentorship Student</span></div></div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.2s;">
+                    <p>"Best copy trading service. I just sleep and the trades hit my TP. Hira bhai ka risk management top notch hai."</p>
+                    <div class="testimonial-author"><div class="author-avatar">Z</div><div class="author-info"><strong>Zain Ul Abideen</strong><span>Copy Trader</span></div></div>
+                </div>
+                <div class="testimonial-card reveal" style="transition-delay: 0.3s;">
+                    <p>"From a beginner to a confident trader. The community is so supportive, and Hira is always available to answer questions."</p>
+                    <div class="testimonial-author"><div class="author-avatar">M</div><div class="author-info"><strong>Maria Sheikh</strong><span>Beginner Course</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-logo">Hira's Academy</div>
+            <div class="footer-sub">Trade with Hira</div>
             <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu Specials</a></li>
-                    <li><a href="#catering">Catering Deals</a></li>
-                </ul>
+                <a href="https://www.tiktok.com/@tradewithhirafx?_r=1&_t=ZN-99xq6ExG88M" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/hirafx887?stkn=aXU3emY1ZHR2azVt&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://chat.whatsapp.com/CTkxAcFTK6iGOhd062JOma" target="_blank" rel="noopener noreferrer" class="footer-wa-link" aria-label="WhatsApp community">
+                    <span class="wa-tooltip">Join for free signals</span>
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
             </div>
-            <div class="footer-contact">
-                <h4>Location & Operations</h4>
-                <p><i class="fa-solid fa-location-dot"></i> Shop 2, Baig Tower, 92 Midway Commercial A, Line E, Precinct 5, Bahria Town Karachi.</p>
-                
-                <p>
-                    <i class="fa-solid fa-phone"></i> 
-                    <a href="tel:+923000423115" style="color: var(--text-muted-white); text-decoration: none; font-weight: 500; transition: color 0.3s;">
-                        +92 300 0423115
-                    </a>
-                </p>
-                
-                <p><i class="fa-solid fa-clock"></i> 09:00 AM - 01:00 AM Daily</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Asian Food & Pakwan. All Rights Reserved.</p>
-        </div>
-    </footer>
+            <p style="color: var(--text-muted); font-size: 14px;">&copy; 2024 Hira's Academy. All Rights Reserved.</p>
+            <p class="footer-disclaimer">Trading involves significant risk of loss. Past performance is not indicative of future results.</p>
+        </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+        <script>
+            /* ═══════════ CUSTOM CURSOR ═══════════ */
+            const cursor = document.querySelector('.cursor');
+            const cursorInner = document.querySelector('.cursor-inner');
+            let mouseX = 0, mouseY = 0, cursorX = 0, cursorY = 0;
+            let cursorVisible = true;
+
+            document.addEventListener('mousemove', function(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                cursorInner.style.left = e.clientX + 'px';
+                cursorInner.style.top = e.clientY + 'px';
+            });
+
+            function animateCursor() {
+                cursorX += (mouseX - cursorX) * 0.12;
+                cursorY += (mouseY - cursorY) * 0.12;
+                cursor.style.left = cursorX + 'px';
+                cursor.style.top = cursorY + 'px';
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
+
+            /* Hover effect on interactive elements */
+            const hoverTargets = document.querySelectorAll('a, button, .service-card, .testimonial-card, .btn, .whatsapp-sticky');
+            hoverTargets.forEach(function(el) {
+                el.addEventListener('mouseenter', function() {
+                    cursor.classList.add('hover');
+                    cursorInner.classList.add('hover');
+                });
+                el.addEventListener('mouseleave', function() {
+                    cursor.classList.remove('hover');
+                    cursorInner.classList.remove('hover');
+                });
+            });
+
+            /* Click effect */
+            document.addEventListener('mousedown', function() {
+                cursor.classList.add('click');
+                cursorInner.classList.add('click');
+            });
+            document.addEventListener('mouseup', function() {
+                cursor.classList.remove('click');
+                cursorInner.classList.remove('click');
+            });
+
+            /* Hide/show cursor when mouse leaves/enters window */
+            document.addEventListener('mouseleave', function() {
+                cursor.style.opacity = '0';
+                cursorInner.style.opacity = '0';
+                cursorVisible = false;
+            });
+            document.addEventListener('mouseenter', function() {
+                cursor.style.opacity = '1';
+                cursorInner.style.opacity = '1';
+                cursorVisible = true;
+            });
+
+            /* ═══════════ MOBILE NAV ═══════════ */
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const navOverlay = document.querySelector('.nav-overlay');
+
+            function toggleMobileNav() {
+                const isOpen = navLinks.classList.toggle('open');
+                navToggle.classList.toggle('active');
+                navOverlay.classList.toggle('active');
+                navToggle.setAttribute('aria-expanded', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            }
+
+            navToggle.addEventListener('click', toggleMobileNav);
+            navOverlay.addEventListener('click', toggleMobileNav);
+
+            /* Close mobile nav when clicking a link */
+            navLinks.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    if (navLinks.classList.contains('open')) {
+                        toggleMobileNav();
+                    }
+                });
+            });
+
+            /* ═══════════ NAV SCROLL EFFECT ═══════════ */
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            }, { passive: true });
+
+            /* ═══════════ ACTIVE NAV LINK ON SCROLL ═══════════ */
+            const sections = document.querySelectorAll('section[id]');
+            const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+            function updateActiveNav() {
+                let current = '';
+                sections.forEach(function(section) {
+                    const sectionTop = section.offsetTop - 150;
+                    if (window.scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navAnchors.forEach(function(anchor) {
+                    anchor.classList.remove('nav-active');
+                    if (anchor.getAttribute('href') === '#' + current) {
+                        anchor.classList.add('nav-active');
+                    }
+                });
+            }
+            window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+            /* ═══════════ SERVICE CARD MOUSE GLOW ═══════════ */
+            document.querySelectorAll('.service-card').forEach(function(card) {
+                card.addEventListener('mousemove', function(e) {
+                    const rect = card.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    card.style.setProperty('--mouse-x', x + '%');
+                    card.style.setProperty('--mouse-y', y + '%');
+                });
+            });
+
+            /* ═══════════ SCROLL REVEAL ═══════════ */
+            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                revealElements.forEach(function(el) {
+                    const elementTop = el.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - 80) {
+                        el.classList.add('active');
+                    }
+                });
+            }
+
+            /* Check on scroll and on load */
+            window.addEventListener('scroll', checkReveal, { passive: true });
+            /* Initial check after a tiny delay for page load */
+            setTimeout(checkReveal, 100);
+
+            /* ═══════════ PARTICLES (Optimized) ═══════════ */
+            const canvas = document.getElementById('particle-bg');
+            const ctx = canvas.getContext('2d');
+            let particlesArray = [];
+            const CONNECTION_DISTANCE = 120;
+            const PARTICLE_COLOR = '0, 255, 136';
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                initParticles();
+            }
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            window.addEventListener('resize', resizeCanvas);
+
+            class Particle {
+                constructor() {
+                    this.size = (Math.random() * 1.5) + 0.5;
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.directionX = (Math.random() * 0.4) - 0.2;
+                    this.directionY = (Math.random() * 0.4) - 0.2;
+                }
+                update() {
+                    if (this.x > canvas.width || this.x < 0) this.directionX = -this.directionX;
+                    if (this.y > canvas.height || this.y < 0) this.directionY = -this.directionY;
+                    this.x += this.directionX;
+                    this.y += this.directionY;
+                }
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                    ctx.fillStyle = 'rgba(' + PARTICLE_COLOR + ', 0.8)';
+                    ctx.fill();
+                }
+            }
+
+            function initParticles() {
+                particlesArray = [];
+                /* Scale particle count with screen size, capped for performance */
+                let area = canvas.width * canvas.height;
+                let numberOfParticles = Math.min(Math.floor(area / 12000), 120);
+                for (let i = 0; i < numberOfParticles; i++) {
+                    particlesArray.push(new Particle());
+                }
+            }
+
+            /* Spatial grid for efficient connection checking */
+            function buildGrid(particles, cellSize) {
+                const grid = {};
+                for (let i = 0; i < particles.length; i++) {
+                    const cx = Math.floor(particles[i].x / cellSize);
+                    const cy = Math.floor(particles[i].y / cellSize);
+                    const key = cx + ',' + cy;
+                    if (!grid[key]) grid[key] = [];
+                    grid[key].push(i);
+                }
+                return grid;
+            }
+
+            function animateParticles() {
+                requestAnimationFrame(animateParticles);
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                /* Update and draw particles */
+                for (let i = 0; i < particlesArray.length; i++) {
+                    particlesArray[i].update();
+                    particlesArray[i].draw();
+                }
+
+                /* Build spatial grid for connections */
+                const grid = buildGrid(particlesArray, CONNECTION_DISTANCE);
+
+                /* Draw connections using grid */
+                ctx.lineWidth = 0.5;
+                for (let i = 0; i < particlesArray.length; i++) {
+                    const cx = Math.floor(particlesArray[i].x / CONNECTION_DISTANCE);
+                    const cy = Math.floor(particlesArray[i].y / CONNECTION_DISTANCE);
+
+                    /* Check 3x3 neighborhood */
+                    for (let dx = -1; dx <= 1; dx++) {
+                        for (let dy = -1; dy <= 1; dy++) {
+                            const key = (cx + dx) + ',' + (cy + dy);
+                            const cell = grid[key];
+                            if (!cell) continue;
+
+                            for (let k = 0; k < cell.length; k++) {
+                                const j = cell[k];
+                                if (j <= i) continue; /* Avoid duplicate checks */
+
+                                const distX = particlesArray[i].x - particlesArray[j].x;
+                                const distY = particlesArray[i].y - particlesArray[j].y;
+                                const dist = Math.sqrt(distX * distX + distY * distY);
+
+                                if (dist < CONNECTION_DISTANCE) {
+                                    const opacity = 1 - (dist / CONNECTION_DISTANCE);
+                                    ctx.strokeStyle = 'rgba(' + PARTICLE_COLOR + ',' + (opacity * 0.6) + ')';
+                                    ctx.beginPath();
+                                    ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
+                                    ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
+                                    ctx.stroke();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            initParticles();
+            animateParticles();
+
+            /* ═══════════ SMOOTH SCROLL ═══════════ */
+            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    var target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
